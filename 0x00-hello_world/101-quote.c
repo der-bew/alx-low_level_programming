@@ -1,7 +1,7 @@
 /**
- * main - Starting point 
+ * main - Start
  *
- * Return: Always return 1 (Error)
+ * Return: Always 1 (Error)
  */
 #include<stdio.h>
 #include <unistd.h>
