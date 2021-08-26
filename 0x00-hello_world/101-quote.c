@@ -1,7 +1,7 @@
 /**
- * main - Wows
+ * main - Starting point 
  *
- * Return: Always 1 (Error)
+ * Return: Always return 1 (Error)
  */
 #include<stdio.h>
 #include <unistd.h>
