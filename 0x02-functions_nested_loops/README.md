@@ -1,0 +1,1 @@
+This folder is created for 0x02-functions_nested_loops alx low level C programming languages project.
