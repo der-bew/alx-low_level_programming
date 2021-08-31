@@ -8,11 +8,9 @@
 
 int main(void)
 {
-	int num, sum;
-	
-	num = 0;
-	sum = 0;
-	while(num < 1024)
+	int num = 1, sum = 0;
+
+	while (num < 1024)
 	{
 		if ((num % 5 == 0) || (num % 3 == 0))
 		{
@@ -20,7 +18,7 @@ int main(void)
 		}
 		num++;
 	}
-	printf("%d \n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
