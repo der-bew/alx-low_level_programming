@@ -1,4 +1,4 @@
-#include "alxAfrica.h"
+#include "main.h"
 
 /**
  *main - Starting point
