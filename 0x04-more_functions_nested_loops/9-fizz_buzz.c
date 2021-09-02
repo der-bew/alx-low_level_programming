@@ -2,10 +2,10 @@
 
 /**
  *main - Prints fizzyBuzz
- *Return: Alawys (0)
+ *Return: Nothing return
  */
 
-int main(void)
+void main(void)
 {
 	int i;
 
@@ -28,6 +28,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
-
-	return (0);
+	printf("\n");
 }
