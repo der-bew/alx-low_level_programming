@@ -13,22 +13,21 @@ int main(void)
 	num = 612852475143;
 	while (num % 2 == 0)
 	{
-		printf("%d", 2);
+		printf("%d\n", 2);
 		num = num / 2;
 	}
 	for (i = 3; i <= sqrt(num); i += 2)
 	{
 		while (num % i == 0)
 		{
-			printf("%ld", i);
+			printf("%ld\n", i);
 			num = num / i;
 		}
 	}
 	if (num > 2)
 	{
-		printf("%ld", num);
+		printf("%ld\n", num);
 	}
-	printf("\n");
 
 	return (0);
 }
