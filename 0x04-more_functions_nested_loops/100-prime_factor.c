@@ -8,26 +8,27 @@
 
 int main(void)
 {
-	long int num, i;
+	long int num, i, res;
 
 	num = 612852475143;
 	while (num % 2 == 0)
 	{
-		printf("%d\n", 2);
+		res = 2;
 		num = num / 2;
 	}
 	for (i = 3; i <= sqrt(num); i += 2)
 	{
 		while (num % i == 0)
 		{
-			printf("%ld\n", i);
+			res = i;
 			num = num / i;
 		}
 	}
 	if (num > 2)
 	{
-		printf("%ld\n", num);
+		res = num;
 	}
+	printf("%ld\n", res);
 
 	return (0);
 }
