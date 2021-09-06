@@ -1,0 +1,1 @@
+This project is created for alx low level programming projects on pointers, arrays, and strings
