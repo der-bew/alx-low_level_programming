@@ -1,0 +1,1 @@
+This folder is created for alx software engineering program for more pointers, arrays, and strings project
