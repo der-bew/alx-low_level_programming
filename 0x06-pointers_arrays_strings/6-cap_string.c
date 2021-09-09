@@ -13,6 +13,10 @@ char *cap_string(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
+		if (i == 0 && c[i] >= 97 && c[i] <= 122)
+		{
+			c[i] -= 32;
+		}
 		for (j = 0; ch[j] != '\0'; j++)
 		{
 			if (c[i] == ch[j])
