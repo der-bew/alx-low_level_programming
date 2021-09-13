@@ -1,0 +1,1 @@
+This project is created for alx software engineering program for 0x07-pointers_arrays_strings projects
