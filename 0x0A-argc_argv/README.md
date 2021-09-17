@@ -1,0 +1,1 @@
+This folder is created for alx software engineering program spacifically for 0x0A-argc_argv projects
