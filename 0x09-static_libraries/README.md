@@ -1,0 +1,1 @@
+This folder is created for alx software engineering program spacfically for the static libraries project 
