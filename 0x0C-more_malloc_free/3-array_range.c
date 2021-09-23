@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  **array_range - Creates an array of integers
- *@min: Start 
+ *@min: Start
  *@max: end
  *Return: Pointer to the newly created array
  *
