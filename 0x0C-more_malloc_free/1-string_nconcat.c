@@ -10,7 +10,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0, j = 0, k = 0, l = 0;
+	unsigned int i = 0, j = 0, k = 0;
 	char *ptr;
 
 	while (s1 && s1[i] != '\0')
@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2 && s2[k] != '\0')
 		k++;
 
-	if (n < k)
+	if (n >= k)
 		n = k;
  
 	ptr = malloc(sizeof(*ptr) * (i + n + 1));
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	k = 0;
-	while (j < l)
+	while (j < n)
 	{
 		if (j <= i)
 			ptr[j] = s1[j];
