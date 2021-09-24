@@ -1,39 +1,57 @@
 #include "main.h"
 #include <stdlib.h>
+
+int _strlen(char *str);
+
 /**
- * *string_nconcat - concatenates two strings
- * @s1: first string
- * @s2: second string
- * @n: limit of s2
- * Return: pointer to new space in memory or null
- **/
+ *string_nconcat - concaten string
+ *@s1: string s1
+ *@s2: string s2
+ *@n: int
+ *
+ *Return: char pointer
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *strDup;
-	int i;
-	unsigned int j;
+	unsigned int i = 0, j, l_s1 = _strlen(s1), l_s2 = _strlen(s2), cal = 0;
+	char *p;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	i = 0;
-	while (s1[i] != '\0')
-		i++;
-	strDup = malloc(sizeof(char) * (i + n + 1));
-	if (strDup == NULL)
+	if (l_s2 > n)
+		l_s2 = l_s2 - (l_s2 - n);
+
+	cal = l_s1 + l_s2 + 1;
+
+	p = malloc(cal * sizeof(char));
+	if (p == NULL)
 		return (NULL);
-	i = j = 0;
-	while (s1[i] != '\0')
+
+	for (j = 0; j < l_s1; j++, i++)
+		p[i] = s1[j];
+
+	for (j = 0; j < l_s2; j++, i++)
+		p[i] = s2[j];
+
+	p[i] = '\0';
+
+	return (p);
+}
+
+
+/**
+ *_strlen - str len the string
+ *@str: string
+ *
+ *Return: int
+ */
+int _strlen(char *str)
+{
+	int i = 0;
+
+	if (str != NULL)
 	{
-		strDup[i] = s1[i];
-		i++;
+		for (; str[i] != '\0';)
+			i++;
 	}
-	while (j < n && s2[j] != '\0')
-	{
-		strDup[i] = s2[j];
-		i++, j++;
-	}
-	strDup[i] = '\0';
-	return (strDup);
+
+	return (i);
 }
