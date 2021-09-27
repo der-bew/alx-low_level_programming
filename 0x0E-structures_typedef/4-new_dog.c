@@ -5,7 +5,7 @@
  *@name: Input dog name
  *@age: Input dog age
  *@owner: Input owner
- *Retrun: NULL
+ *Return: pointer or NULL
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
