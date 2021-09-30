@@ -2,6 +2,8 @@
 #define _VARIADICFUNCTIONS_H_
 
 #include <stdarg.h>
+#include <stdio.h>
+
 /**
  * struct print - print type with corresponding print function
  * @t: print type
